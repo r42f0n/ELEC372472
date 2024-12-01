@@ -1,1 +1,27 @@
-# ELEC372472
+java c
+ELEC372/472: Integrated   Circuit   Design   Assignment   1
+Objectives:
+•       Understand      the      fundamental      theory      underlying      internal      and      external      capacitances      of    a   MOSFET   and   simple   CMOS inverter,   and their effects on   circuit   performance   as   covered   in   ELEC372/472 in   the   context   of   design.•            Carry      out   basic      calculations      of   such      capacitances      for      a      simple      CMOS      inverter      so      as      to determine    the    value      of    the      effective      load    capacitance.      In      later      assignments,      this      load   capacitance    will    be    utilised    in      circuit      simulations      on      a      software      package    Multisim,      to   investigate how changes in device geometry affects the performance of   CMOS-based circuits.For   guidance,   a   15-credit   module   unit   is   meant   to   occupy      150   hours   in   total   (including   both   private study   and   contact   hours).   You   should   aim   to   spend   about   3-4   hours per   week   at   the   terminals.   The   remainder of   the time will be taken up with background reading and research.
+KEEP A LOG BOOK OF YOUR PROGRESS.
+   EFFECTIVE   TIME   MANAGEMENT   IS   A   KEY   SKILL   THAT   APPLIES   TO   ALL   PROFESSIONS AND WORKING SITUATIONS.SO   IF   YOU   GET   STUCK, ASK   - DO   NOT   WASTE   TIME   -   STAY   FOCUSED
+IntroductionThis task requires you to write a   simple   programme   to   perform   basic   calculations   on   inverter   speed,   as defined by   fall-time. Fall-time is the time taken for   an   n-channel   MOSFET   in   a   CMOS   inverter to   pull-down   the   output   from   90% to   10%   of   the   supply   voltage.   The   theory   is   presented   in   the   lecture notes and further instructions are   provided   in appendix   A.Such   "ball-park"   or   "back   of the   envelope"   calculations   are   essential   when   performing   simulation   tasks,    as    there    is    a      need      to      cross-check      the      numbers      obtained      from      complex      simulations      are   reasonable.   The   values   you   obtain   from   your   simple   model   will   also   inform   you   on   how   to   set-up   your   simulations,   i.e.   establish   the   time   frame   of interest   and   allow   you   to   set   the   frequency   of the      test   signals so as to correctly observe   all the   anomalies   on   the   voltage-time   plots   etc.   Furthermore,   if   you   set   a   very   long   time   frame, you   may   overload your   memory   store   on   the   server.   Th代 写ELEC372/472: Integrated Circuit Design Assignment 1Python
+代做程序编程语言is   approach   should be applied in all your   simulation   assignments.
+Instructions
+Write   a   simple   model   in   Matlab, C, python   or   anything   else   you   prefer.You should think about which parameters to define as variables and constants; certainly the transistor   width   (W)   needs   to   be   defined   as   a   variable   (see   below).   Make   sure   you   use   sensible   values   for   a   1.2   μm   technology   as   used   in   this   course.   In   this   case,   the   long-channel   theory   applies   (explain   why in your report), and for the CMOS design,   assume   an   n-well   process.To   develop the model for the effective   load   capacitor   (CL)   refer   to   the   lecture   notes   and   instructions   below. Tables   1 and   2 provide   a   summary   of   the   SPICE   models   and   values   for   the   1.2   μm   technology that you will utilise within the Multisim environment. Use   these   values   in   your   calculations.   A   more   detailed   SPICE   model   will   be   provided   in   later   assignment,   and   you   will   be   able   to   compare   your   calculated   values.   When using   the   values   in   Table   2,   take   great   care   with   the   units   since   values   in   SPICE   are   not   always   quoted   in   SI   units. Also   check   that   the   values   you   obtain   for   the   parameters   are   sensible e.g., what value do you expect for the built-in voltage   of   ap-n   junction?
+Once your   simple (I continue to emphasise   its   simple   -   don't   look   for   complications!)   programme   is   running and yielding sensible values, plot graphs   of   the   following:
+1.                Fall   time   as   a   function   of   width, W   –   sensible   range   of   values   –   you   can   not   drive
+many gates   at   high   speed;
+2.                Fall   time   as   a   function   of   fan-out   (i.e.   attach   an   increasing   number   of   inverters   to
+the test inverter); choose   one   value   of   W.
+Submission
+Download the Assignment   1   submission form   on   Canvas   and   fill-in   all   the   sections   below:
+a)         Provide   basic   description   of the   task.   You   can   refer   to   the   lecture   notes   for   details   of   the   derivation
+b)      Write a little on the APPROXIMATIONS assumed   in that   analysis.
+c)         Results/Graph and Comments from your programme   for Fall time   as   a   function   of   width.
+d)      Results Graph and Comments from your programme   for Fall   time   as   a   function   of   fan-out.
+e)         Paste   your   source   code.
+   
+   
+
+         
+加QQ：99515681  WX：codinghelp  Email: 99515681@qq.com
